@@ -13,7 +13,7 @@ data "aws_subnets" "existing_subnets" {
   }
   filter {
     name   = "tag:Name"
-    values = [*public*]
+    values = [public]
   }
 }
 
